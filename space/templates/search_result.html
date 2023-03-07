@@ -1,0 +1,11 @@
+{% for space in spaces %}
+<div class="col-sm-12 my-2">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{space.title}}</h5>
+            <p class="card-text">{{space.summary}}</p>
+            <a href="#" class="btn btn-primary">{{space.address}}</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
