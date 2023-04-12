@@ -4,7 +4,10 @@
         <div class="card-body">
             <h5 class="card-title">{{space.title}}</h5>
             <p class="card-text">{{space.summary}}</p>
-            <a href="#" class="btn btn-primary">{{space.address}}</a>
+            <a href="https://map.naver.com/v5/search/{{space.title}}" target="_blank" class="btn btn-primary">{{space.address}}</a>
+            {% if space.instagram %}
+            <a href="https://instagram.com/{{space.instagram}}" target="_blank" class="btn btn-success">인스타그램</a>
+            {% endif %}
         </div>
     </div>
 </div>
